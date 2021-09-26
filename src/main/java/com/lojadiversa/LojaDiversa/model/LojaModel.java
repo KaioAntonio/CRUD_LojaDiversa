@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class LojaModel {
 
     @Id
-    private Integer codigo;
+    public Integer codigo;
 
     @Column(nullable = false, length = 50)
     public String nome;
@@ -17,7 +17,7 @@ public class LojaModel {
     @Column(nullable = false, length = 10)
     public String senha;
     @Column(nullable = false, length = 11)
-    public String cpf;
+    public Integer cpf;
 
     public Integer getCodigo() {
         return codigo;
@@ -51,11 +51,15 @@ public class LojaModel {
         this.senha = senha;
     }
 
-    public String getCpf() {
+    public Integer getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf(Integer cpf) {
         this.cpf = cpf;
     }
+
+
+
 }
+

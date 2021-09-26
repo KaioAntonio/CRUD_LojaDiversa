@@ -8,17 +8,17 @@ import javax.persistence.Id;
 public class UsuarioModel {
 
     @Id
-    public Integer codigo;
+    private Integer codigo;
 
     @Column(nullable = false, length = 50)
-    public String nome;
+    private String nome;
     @Column(nullable = false, length = 10)
-    public String login;
+    private String login;
     @Column(nullable = false, length = 10)
-    public String senha;
+    private String senha;
 
 
-    public Integer getCodigo() {
+    private Integer getCodigo() {
         return codigo;
     }
 
